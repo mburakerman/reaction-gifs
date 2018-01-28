@@ -111,7 +111,7 @@ class App extends Component {
       <div>
         <div className="container">
           <h1 className="title">
-            <a href="/">
+            <a href="/reaction-gifs">
               REACTION GIFS <span>💭</span>
             </a>
           </h1>
