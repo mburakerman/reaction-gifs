@@ -1,0 +1,137 @@
+.title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.title a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #344f71;
+}
+
+.gif {
+  list-style: none;
+  position: relative;
+  max-width: 500px;
+  overflow: hidden;
+  border-color: transparent;
+}
+.gif:not(:last-child) {
+  margin-bottom: 25px;
+}
+.select-title:not(:first-child) {
+  margin-top: 20px;
+}
+
+.card-block {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.gif:hover .card-block {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  z-index: 666;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.twitter-icon {
+  margin-right: 8px;
+}
+.external-icon {
+  margin-left: 8px;
+}
+.card-columns {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+@media (max-width: 767.99px) {
+  .card-block {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+  }
+  .card-columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .title {
+    display: none;
+  }
+  .menu > div {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: calc(100% - 30px) !important;
+    height: 200px;
+    transform: translate(-50%);
+    padding: 15px 15px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(52, 79, 113, 0.15),
+      0 10px 10px rgba(52, 79, 113, 0.1);
+    z-index: 6668;
+  }
+  .menu .select-title {
+    font-size: 18px;
+  }
+  .gifs {
+    margin-top: 225px;
+  }
+  .gif {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 100px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* react-select stylings */
+.Select-control {
+  border: 1px solid rgba(52, 79, 113, 0.5) !important;
+}
+
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(52, 79, 113, 0.05) !important;
+}
+
+.Select-menu-outer {
+  border: 1px solid rgba(52, 79, 113, 0.5) !important;
+}
+
+.Select-arrow {
+  border-color: rgba(52, 79, 113, 0.5) transparent transparent !important;
+}
+
+.Select-option.is-selected {
+  background-color: rgba(52, 79, 113, 0.5) !important;
+  color: #fff;
+  transition: all 0.1s;
+}
+.Select-option.is-focused {
+  background-color: rgba(52, 79, 113, 0.5) !important;
+  color: #fff;
+  transition: all 0.1s;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #344f71 !important;
+  box-shadow: inset 0 1px 1px rgba(52, 79, 113, 0.075),
+    0 0 0 3px rgba(52, 79, 113, 0.1) !important;
+  background: #fff;
+}
+/* react-select stylings */
