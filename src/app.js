@@ -89,8 +89,8 @@ class App extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.selectedOption) {
-      this.giphy(this.props.selectedOption.value);
+    if (nextProps.selectedOption !== this.props.selectedOption) {
+      this.giphy(nextProps.selectedOption.value);
     }
   }
 

@@ -23,13 +23,16 @@
 }
 
 .card-block {
+  width:100%;
   position: absolute;
+  bottom: 0;
   visibility: hidden;
+  background:rgba(255,255,255,.5);
+  padding: 4px 4px;
   transition: all 0.3s;
 }
 
 .gif:hover .card-block {
-  position: static;
   visibility: visible;
   opacity: 1;
   z-index: 666;
