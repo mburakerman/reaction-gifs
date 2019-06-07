@@ -60,7 +60,7 @@ class App extends Component {
     var host = "https://api.giphy.com";
     var path = "/v1/gifs/search?";
     var query = "q=" + feeling;
-    var api_key = "&api_key=dc6zaTOxFJmzC";
+    var api_key = "&api_key=MFkHa14W6F1BYFsvPVgCwnt4IEyAmiia";
     var limit = "&limit" + gifLimit;
 
     var url = host + path + query + api_key + limit;
